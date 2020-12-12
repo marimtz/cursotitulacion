@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            border: 2px solid rgb(238, 17, 201); /*agregar un borde solido de color negro*/
+            text-align: center; /* centrar el texto*/
+        }
+        th, td{
+            border: 2px solid rgb(0, 0, 0);
+        }
+        encabezado{
+            background-color: beige;color: red; /* color de fondo para el encabezado*/
+        }
+        .fila2{
+            background-color: rgb(142, 135, 235);color: rgb(248, 245, 245);
+        }
+        .fila3{
+            background-color: rgb(235, 135, 227);color: rgb(238, 245, 245);
+        }
+</style>
+</head>
+<body>
+    <!--table width="50%"border="1px" cellpadding="5px" cellspacing="5px"--->
+    <!--table tsyle="50%" border="1px" cellpadding="5px" cellspacing="5px"-->
+    <table tsyle="50%; border: 1px solid black" cellpadding="5px" cellspacing="5px">
+        
+         <!--tr bgcolor="lightgray"> <!--filas table row-->
+         <tr style="background-color: beige;color: red;"> <!--filas table row-->
+         <th colspan="2"> nombre completo</th> <!--atributo collsapan para extender las columnas-->
+         <th>Edad</th>  <!--encabezado de la tabla-->
+         </tr>
+         <tr>
+             <tr class="fila2">
+             <td>jill</td> <!--datos de la tabla-->
+             <td>smth</td>
+             <td rowspan="2">50</td> <!--atributo rowspan para extender las filas-->
+         </tr>
+         <tr>
+             <td>jill</td> <!--datos de la tabla-->
+             <td>smth</td>
+             <!--td>50</td-->
+
+         </tr>
+          <tr>
+            <tr class="fila3">
+              <td>eve</td>
+              <td>jackson</td>
+              <td>94</td>
+          </tr>
+    </table>
+</body>
+</html>
